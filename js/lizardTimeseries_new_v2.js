@@ -3,7 +3,7 @@
     var myConnector = tableau.makeConnector();
     myConnector.init = function(initCallback) {
         initCallback();
-    }
+    };
 
     // Define the schema
     myConnector.getSchema = function(schemaCallback) {
@@ -74,7 +74,6 @@
                 alias: "latitude",
                 dataType: tableau.dataTypeEnum.float
             }];
-
 
             var pumpstation_table = {
                 id: "pumpstation",
